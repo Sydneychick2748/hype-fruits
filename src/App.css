@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.main-wrapper {
+  height: 100vh;
+  width: 60vw;
+  max-width: 900px;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 60rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color-bar {
+  width: 100%;
+  height: 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-engineer-button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #d94646;
   color: white;
+  border: none;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.radio-group {
+  width: 46vw;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.table-wrapper {
+  margin-top: 3em;
+}
+.table-parent div {
+  width: 50%;
+  box-shadow: none;
+  font-size: 1.5rem;
+}
+
+.color-parent {
+  align-items: center !important;
+}
+
+.table-lable {
+  text-align: right !important;
+  font-weight: bold !important;
+  margin-right: 1rem;
+  /* padding: 0px !important; */
+}
+
+.color-lable {
+  width: 47% !important;
+}
+
+.table-data {
+  text-align: left !important;
+}
+
+.card {
+  margin: 0.5rem !important;
+  width: 18vw;
+}
+
+.cards-parent {
+  width: 71vw;
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 600px) {
+  .radio-group {
+    width: 54vw;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .main-wrapper {
+    width: 75vw;
+  }
+  .table-parent div {
+    width: 90%;
+  }
+  .table-parent {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+    width: 53vw;
+    position: relative;
+    flex-direction: row;
+  }
+  .table-lable {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .radio-group {
+    width: 53vw;
   }
 }
